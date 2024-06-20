@@ -4,7 +4,7 @@
   "description": "jest test",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --collectCoverage",
     "test:watch": "jest --watchAll",
     "coverage": "jest --collectCoverage"
   },
@@ -20,5 +20,10 @@
   },
   "directories": {
     "test": "test"
+  },
+  "coverageThreshold": {
+    "branches": 100,
+    "functions": 100,
+    "lines": 100
   }
 }
